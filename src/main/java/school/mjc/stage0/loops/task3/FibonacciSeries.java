@@ -6,11 +6,10 @@ public class FibonacciSeries {
     }
     public static void printFibonacci(int lastFibonacci) {
         int prevNumToSum = 1;
-        int sum = 0;
         int prevSum = 0;
         System.out.println(prevSum);
         for (int i = 1; i < lastFibonacci; i++) {
-            sum = prevSum + prevNumToSum;
+            int sum = prevSum + prevNumToSum;
             prevNumToSum = prevSum;
             prevSum = sum;
             System.out.println(sum);

@@ -5,12 +5,12 @@ public class DigitsSum {
         printDigitsSum(-499);
     }
     public static void printDigitsSum(int t){
-        String intToStr = String.valueOf(t);
         int digitsSum = 0;
         int startPoint = 0;
-        if (intToStr.startsWith("-")) {
+        if (t < 0) {
             startPoint = 1;
         }
+        String intToStr = String.valueOf(t);
         for (int i = startPoint; i < intToStr.length(); i++) {
             digitsSum += Integer.parseInt(String.valueOf(intToStr.charAt(i)));
         }
