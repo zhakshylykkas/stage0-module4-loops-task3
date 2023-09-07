@@ -5,7 +5,7 @@ public class AlphabetPrinter {
         printAlphabet();
     }
     public static void printAlphabet() {
-        for (char i = 'A'; i <= 'Z'; i++) {
+        for (char i = 'a'; i <= 'z'; i++) {
             System.out.println(i);
         }
     }

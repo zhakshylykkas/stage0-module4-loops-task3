@@ -2,14 +2,14 @@ package school.mjc.stage0.loops.task3;
 
 public class FibonacciSeries {
     public static void main(String[] args) {
-        printFibonacci(9);
+        printFibonacci(3);
     }
     public static void printFibonacci(int lastFibonacci) {
         int prevNumToSum = 1;
         int sum = 0;
         int prevSum = 0;
         System.out.println(prevSum);
-        for (int i = 0; i < lastFibonacci; i++) {
+        for (int i = 1; i < lastFibonacci; i++) {
             sum = prevSum + prevNumToSum;
             prevNumToSum = prevSum;
             prevSum = sum;
